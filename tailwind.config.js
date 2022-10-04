@@ -20,6 +20,8 @@ module.exports = {
 			'5xl': '3rem',
 			'6xl': '4rem',
 			'7xl': '5rem',
+			'h1': 'calc(calc(1vh + 1vw) * 4)',
+			'h3': 'calc(1vh + 1vw)',
 		},
 		extend: {},
 	},

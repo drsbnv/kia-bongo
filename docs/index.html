@@ -8,7 +8,7 @@
 	<script src="js/scripts.js" defer></script>
 </head>
 <body>
-	<section class="banner bg-black text-white min-h-[750px]">
+	<section class="banner bg-black text-white min-h-[700px]">
 		<header>
 			<div class="container">
 				<div class="flex py-5 md:py-0 items-start md:items-center justify-between gap-x-10">
@@ -22,9 +22,19 @@
 				</div>
 			</div>
 		</header>
-		<div class="h-20 relative">
+		<div class="relative h-full">
 			<img src="img/decor-line-white.png" class="absolute w-full h-[70px] top-0 left-0 right-0 hidden sm:block" />
 			<img src="img/decor-line-white-mobile.png" class="absolute w-full h-[25px] top-0 left-0 right-0 block sm:hidden" />
+			<div class="container px-0 py-10 h-full relative">
+				<h1 class="text-h1 sm:mb-12 pl-4">Kia Bongo</h1>
+				<p class="text-h3 uppercase leading-[1.2] lg:mb-20 pl-4">Новые автомобили<br class="hidden lg:block"> в наличии и на заказ</p>
+				<img class="relative lg:absolute lg:right-0 lg:bottom-0 lg:max-w-[600px] xl:max-w-full mb-5 lg:mb-0" src="img/banner-bg.png" alt="ALT">
+				<form class="flex flex-col gap-y-7 px-4">
+					<input type="text" class="w-full lg:w-64" placeholder="Ваше имя">
+					<input type="tel" class="w-full lg:w-64" placeholder="+7 (999) 999-99-99">
+					<button class="btn btn-o w-full lg:w-64">Оставить заявку</button>
+				</form>
+			</div>
 		</div>
 	</section>
 </body>

@@ -37,9 +37,10 @@
 			</div>
 		</div>
 	</div>
-	<section class="relative z-[1] pt-[100px]">
-		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden sm:block z-[-1]" />
-		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[120px] left-0 right-0 block sm:hidden z-[-1]" />
+	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+
 		<div class="container">
 			<h2 class="text-h2 inline-block bg-white">Характеристики</h2>
 
@@ -91,8 +92,9 @@
 			</div>
 
 		</div>
-		<div class="container px-0 mt-5 max-w-[1200px]">
-			<div class="grid grid-cols-2 md:grid-cols-4 bg-black md:bg-white md:text-black text-white rounded-tl-3xl sm:rounded-br-3xl pb-8 gap-x-4">
+
+		<div class="container px-0 mt-5">
+			<div class="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4 bg-black md:bg-white md:text-black text-white rounded-tl-3xl sm:rounded-br-3xl pb-8 gap-x-4">
 				<div class="text-center mt-8">
 					<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
 						<img src="img/characteristics/icons/1.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
@@ -123,37 +125,266 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="container">
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 items-start">
+
+				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden block sm:hidden">
+					<div class="flex items-center justify-between text-xs px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors bg-gray-200">
+						<span class="uppercase">Подробные характеристики</span>
+						<button class="w-5 h-5 flex items-center">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus hidden" />							
+							<img src="img/characteristics/icons/minus.svg" class="svg minus" />							
+						</button>
+					</div>
+				</div>
+				
+				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
+					<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
+						<span class="uppercase">Двигатель</span>
+						<button class="w-5 h-5 flex items-center">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
+							<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
+						</button>
+					</div>
+					<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative">
+						<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
+						</button>
+						<div>
+							<p class="font-normal underline">Модель</p>
+							<h4>D4CB</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Марка</p>
+							<h4>Kia</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Экологический класс</p>
+							<h4>Евро 5</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Тип</p>
+							<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
+							<h4>96 (130) / 3 800</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
+							<h4>255 / 1 500 - 3 500</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
+							<h4>2 497 см3</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Система питания</p>
+							<h4>DELPHI</h4>
+						</div>
+						<div>
+							<p class="font-normal underline pr-6">Система выпуска</p>
+							<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
+					<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
+						<span class="uppercase">Двигатель</span>
+						<button class="w-5 h-5 flex items-center">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
+							<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
+						</button>
+					</div>
+					<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
+						<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
+						</button>
+						<div>
+							<p class="font-normal underline">Модель</p>
+							<h4>D4CB</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Марка</p>
+							<h4>Kia</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Экологический класс</p>
+							<h4>Евро 5</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Тип</p>
+							<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
+							<h4>96 (130) / 3 800</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
+							<h4>255 / 1 500 - 3 500</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
+							<h4>2 497 см3</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Система питания</p>
+							<h4>DELPHI</h4>
+						</div>
+						<div>
+							<p class="font-normal underline pr-6">Система выпуска</p>
+							<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
+					<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
+						<span class="uppercase">Двигатель</span>
+						<button class="w-5 h-5 flex items-center">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
+							<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
+						</button>
+					</div>
+					<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
+						<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
+						</button>
+						<div>
+							<p class="font-normal underline">Модель</p>
+							<h4>D4CB</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Марка</p>
+							<h4>Kia</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Экологический класс</p>
+							<h4>Евро 5</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Тип</p>
+							<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
+							<h4>96 (130) / 3 800</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
+							<h4>255 / 1 500 - 3 500</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
+							<h4>2 497 см3</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Система питания</p>
+							<h4>DELPHI</h4>
+						</div>
+						<div>
+							<p class="font-normal underline pr-6">Система выпуска</p>
+							<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
+					<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
+						<span class="uppercase">Двигатель</span>
+						<button class="w-5 h-5 flex items-center">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
+							<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
+						</button>
+					</div>
+					<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
+						<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
+							<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
+						</button>
+						<div>
+							<p class="font-normal underline">Модель</p>
+							<h4>D4CB</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Марка</p>
+							<h4>Kia</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Экологический класс</p>
+							<h4>Евро 5</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Тип</p>
+							<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
+							<h4>96 (130) / 3 800</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
+							<h4>255 / 1 500 - 3 500</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
+							<h4>2 497 см3</h4>
+						</div>
+						<div>
+							<p class="font-normal underline">Система питания</p>
+							<h4>DELPHI</h4>
+						</div>
+						<div>
+							<p class="font-normal underline pr-6">Система выпуска</p>
+							<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
+						</div>
+					</div>
+				</div>
+
+			</div>			
+		</div>
+
 	</section>
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+		<div class="container">
+			<h2 class="text-h2 inline-block bg-white">Интерьер</h2>
+		</div>
+	</section>
+
+	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+		<div class="container">
+			<h2 class="text-h2 inline-block bg-white">Комплектации</h2>
+		</div>
+	</section>
+
+	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+		<div class="container">
+			<h2 class="text-h2 inline-block bg-white">Эстерьер</h2>
+		</div>
+	</section>
+
+	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+		<div class="container">
+			<h2 class="text-h2 inline-block bg-white">Видеообзоры</h2>
+		</div>
+	</section>
+
+	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+		<div class="container">
+			<h2 class="text-h2 inline-block bg-white">Владельцам</h2>
+		</div>
+	</section>
+
 </body>
 </html>

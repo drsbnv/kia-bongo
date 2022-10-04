@@ -11,17 +11,21 @@
 	<section class="banner bg-black text-white min-h-[750px]">
 		<header>
 			<div class="container">
-				<div class="flex items-center justify-between gap-x-8">
-					<nav class="flex justify-between flex-grow">
-						<a href="#" class="font-normal uppercase leading-none py-10 transition-all font-bold px-5 hover:bg-opacity-40 hover:bg-white">Компания</a>
-						<a href="#" class="font-normal uppercase leading-none py-10 transition-all px-5 hover:bg-opacity-40 hover:bg-white">О Kia Bongo</a>
-						<a href="#" class="font-normal uppercase leading-none py-10 transition-all px-5 hover:bg-opacity-40 hover:bg-white">Записаться на тест-драйв</a>
-						<a href="#" class="font-normal uppercase leading-none py-10 transition-all px-5 hover:bg-opacity-40 hover:bg-white">Владельцам</a>
+				<div class="flex py-5 md:py-0 items-start md:items-center justify-between gap-x-10">
+					<nav class="flex flex-col sm:flex-row sm:justify-between flex-grow flex-wrap gap-5 text-xs lg:text-base">
+						<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 font-bold">Компания</a>
+						<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">О Kia Bongo</a>
+						<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 order-last md:order-none">Записаться на тест-драйв</a>
+						<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">Владельцам</a>
 					</nav>
-					<a href="tel:+79999999999" class="h-10 bg-white text-black flex items-center px-2.5 rounded-tl-2xl transition-all hover:rounded-tl-none">+7 (999) 999-99-99</a>
+					<a href="tel:+79999999999" class="absolute top-5 right-4 sm:relative sm:top-0 sm:right-0 bg-white text-xs lg:text-base text-black whitespace-nowrap py-2 px-2.5 rounded-tl-2xl transition-all hover:rounded-br-2xl">+7 (999) 999-99-99</a>
 				</div>
 			</div>
 		</header>
+		<div class="h-20 relative">
+			<img src="img/decor-line-white.png" class="absolute w-full h-[70px] top-0 left-0 right-0 hidden sm:block" />
+			<img src="img/decor-line-white-mobile.png" class="absolute w-full h-[25px] top-0 left-0 right-0 block sm:hidden" />
+		</div>
 	</section>
 </body>
 </html>

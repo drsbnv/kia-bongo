@@ -1,4 +1,4 @@
-const convertImages = (query, callback) => {
+const convertImgToSvg = (query, callback) => {
 	const images = document.querySelectorAll(query);
 
 	images.forEach(image => {
@@ -18,4 +18,4 @@ const convertImages = (query, callback) => {
 	});
 }
 
-convertImages('.svg');
+convertImgToSvg('.svg');

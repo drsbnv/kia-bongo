@@ -1,4 +1,4 @@
 // require('fslightbox');
 
-import './modules/convertImages'
+import './modules/convertImgToSvg'
 import './modules/sliders'

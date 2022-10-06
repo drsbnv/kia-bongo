@@ -8,20 +8,20 @@
 	<script src="js/scripts.js" defer></script>
 </head>
 <body>
-	<div class="banner bg-black text-white min-h-[700px]">
-		<header>
-			<div class="container">
-				<div class="flex py-5 md:py-0 items-start md:items-center justify-between gap-x-10">
-					<nav class="flex flex-col sm:flex-row sm:justify-between flex-grow flex-wrap gap-5 text-xs lg:text-base">
-						<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 font-bold">Компания</a>
-						<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">О Kia Bongo</a>
-						<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 order-last md:order-none">Записаться на тест-драйв</a>
-						<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">Владельцам</a>
-					</nav>
-					<a href="tel:+79999999999" class="absolute top-5 right-4 sm:relative sm:top-0 sm:right-0 bg-white text-xs lg:text-base text-black whitespace-nowrap py-2 px-2.5 rounded-tl-2xl transition-all hover:rounded-br-2xl">+7 (999) 999-99-99</a>
-				</div>
+	<header class="bg-black text-white">
+		<div class="container">
+			<div class="flex py-5 md:py-0 items-start md:items-center justify-between gap-x-10">
+				<nav class="flex flex-col sm:flex-row sm:justify-between flex-grow flex-wrap gap-5 text-xs lg:text-base">
+					<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 font-bold">Компания</a>
+					<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">О Kia Bongo</a>
+					<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 order-last md:order-none">Записаться на тест-драйв</a>
+					<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">Владельцам</a>
+				</nav>
+				<a href="tel:+79999999999" class="absolute top-5 right-4 sm:relative sm:top-0 sm:right-0 bg-white text-xs lg:text-base text-black whitespace-nowrap py-2 px-2.5 rounded-tl-2xl transition-all hover:rounded-br-2xl">+7 (999) 999-99-99</a>
 			</div>
-		</header>
+		</div>
+	</header>
+	<div class="banner bg-black text-white min-h-[700px]">
 		<div class="relative h-full">
 			<img src="img/decor-line-white.png" class="absolute w-full h-[70px] top-0 left-0 right-0 hidden sm:block" />
 			<img src="img/decor-line-white-mobile.png" class="absolute w-full h-[25px] top-0 left-0 right-0 block sm:hidden" />
@@ -37,529 +37,581 @@
 			</div>
 		</div>
 	</div>
-	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
-		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
-		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
 
-		<div class="container">
-			<h2 class="text-h2 inline-block bg-white">Характеристики</h2>
+	<main>
+		<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+			<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+			<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
 
-			<div class="flex flex-col md:flex-row justify-center w-fit mx-auto">
-				<div class="px-10">
-					<div class="flex gap-5 relative">
-						<div class="absolute md:relative h-full md:h-auto -left-12 md:left-0 flex flex-col justify-between gap-y-2 pt-6 sm:pt-10 pb-16 sm:pb-20">
-							<span class="flex-grow w-2.5 border-l border-t border-black ml-4 sm:mx-auto"></span>
-							<span class="text-center text-xs sm:text-base">1&nbsp;995<br class="block sm:hidden"> mm</span>
-							<span class="flex-grow w-2.5 border-l border-b border-black ml-4 sm:mx-auto"></span>
+			<div class="container">
+				<h2 class="text-h2 inline-block bg-white">Характеристики</h2>
+
+				<div class="flex flex-col md:flex-row justify-center w-fit mx-auto">
+					<div class="px-10">
+						<div class="flex gap-5 relative">
+							<div class="absolute md:relative h-full md:h-auto -left-12 md:left-0 flex flex-col justify-between gap-y-2 pt-6 sm:pt-10 pb-16 sm:pb-20">
+								<span class="flex-grow w-2.5 border-l border-t border-black ml-4 sm:mx-auto"></span>
+								<span class="text-center text-xs sm:text-base">1&nbsp;995<br class="block sm:hidden"> mm</span>
+								<span class="flex-grow w-2.5 border-l border-b border-black ml-4 sm:mx-auto"></span>
+							</div>
+							<div>
+								<img src="img/characteristics/1.png" alt="ALT">
+								<div class="flex items-center justify-between gap-x-2 w-[65%] mx-auto mb-3">
+									<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
+									<span class="mt-2 text-xs sm:text-base">1&nbsp;490&nbsp;mm</span>
+									<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
+								</div>	
+								<div class="flex items-center justify-between gap-x-2 w-[78%] mx-auto">
+									<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
+									<span class="mt-2 text-xs sm:text-base">1&nbsp;740&nbsp;mm</span>
+									<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
+								</div>						
+							</div>
 						</div>
-						<div>
-							<img src="img/characteristics/1.png" alt="ALT">
-							<div class="flex items-center justify-between gap-x-2 w-[65%] mx-auto mb-3">
-								<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
-								<span class="mt-2 text-xs sm:text-base">1&nbsp;490&nbsp;mm</span>
-								<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
-							</div>	
-							<div class="flex items-center justify-between gap-x-2 w-[78%] mx-auto">
-								<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
-								<span class="mt-2 text-xs sm:text-base">1&nbsp;740&nbsp;mm</span>
-								<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
-							</div>						
+					</div>
+					<div class="px-10">
+						<img src="img/characteristics/2.png" class="mx-auto" alt="ALT">
+						<div class="flex items-center justify-between gap-x-2 w-[63%] mx-auto mb-3">
+							<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
+							<span class="mt-2 text-xs sm:text-base">1&nbsp;340&nbsp;mm</span>
+							<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
 						</div>
 					</div>
 				</div>
-				<div class="px-10">
-					<img src="img/characteristics/2.png" class="mx-auto" alt="ALT">
-					<div class="flex items-center justify-between gap-x-2 w-[63%] mx-auto mb-3">
+
+				<div class="lg:mt-10 w-fit mx-auto">
+					<img src="img/characteristics/3.png" class="mx-auto" alt="ALT">
+					<div class="flex items-center justify-between gap-x-2 w-[50%] mx-auto mb-3">
 						<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
-						<span class="mt-2 text-xs sm:text-base">1&nbsp;340&nbsp;mm</span>
+						<span class="mt-2 text-xs sm:text-base">2&nbsp;615&nbsp;mm</span>
+						<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
+					</div>
+					<div class="flex items-center justify-between gap-x-2 w-[95%] mx-auto">
+						<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
+						<span class="mt-2 text-xs sm:text-base">5&nbsp;160&nbsp;(5&nbsp;115)&nbsp;mm</span>
 						<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
 					</div>
 				</div>
+
 			</div>
 
-			<div class="lg:mt-10 w-fit mx-auto">
-				<img src="img/characteristics/3.png" class="mx-auto" alt="ALT">
-				<div class="flex items-center justify-between gap-x-2 w-[50%] mx-auto mb-3">
-					<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
-					<span class="mt-2 text-xs sm:text-base">2&nbsp;615&nbsp;mm</span>
-					<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
-				</div>
-				<div class="flex items-center justify-between gap-x-2 w-[95%] mx-auto">
-					<span class="flex-grow h-2.5 border-l border-b border-black mx-auto"></span>
-					<span class="mt-2 text-xs sm:text-base">5&nbsp;160&nbsp;(5&nbsp;115)&nbsp;mm</span>
-					<span class="flex-grow h-2.5 border-r border-b border-black mx-auto"></span>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="container px-0 sm:px-4 mt-5">
-			<div class="mx-auto grid grid-cols-2 md:grid-cols-4 bg-black md:bg-white md:text-black text-white rounded-tl-3xl sm:rounded-br-3xl pb-8 gap-x-4">
-				<div class="text-center mt-8">
-					<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
-						<img src="img/characteristics/icons/1.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
+			<div class="container px-0 sm:px-4 mt-5">
+				<div class="mx-auto grid grid-cols-2 md:grid-cols-4 bg-black md:bg-white md:text-black text-white rounded-tl-3xl sm:rounded-br-3xl pb-8 gap-x-4">
+					<div class="text-center mt-8">
+						<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
+							<img src="img/characteristics/icons/1.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
+						</div>
+						<h4 class="text-xs md:text-base uppercase mb-1.5">Коробка передач</h4>
+						<p class="font-light text-3xl md:text-4xl">6 MT</p>
 					</div>
-					<h4 class="text-xs md:text-base uppercase mb-1.5">Коробка передач</h4>
-					<p class="font-light text-3xl md:text-4xl">6 MT</p>
-				</div>
-				<div class="text-center mt-8">
-					<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
-						<img src="img/characteristics/icons/2.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
+					<div class="text-center mt-8">
+						<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
+							<img src="img/characteristics/icons/2.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
+						</div>
+						<h4 class="text-xs md:text-base uppercase mb-1.5">Топливный бак</h4>
+						<p class="font-light text-3xl md:text-4xl">60 л</p>
 					</div>
-					<h4 class="text-xs md:text-base uppercase mb-1.5">Топливный бак</h4>
-					<p class="font-light text-3xl md:text-4xl">60 л</p>
-				</div>
-				<div class="text-center mt-8">
-					<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
-						<img src="img/characteristics/icons/3.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
+					<div class="text-center mt-8">
+						<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
+							<img src="img/characteristics/icons/3.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
+						</div>
+						<h4 class="text-xs md:text-base uppercase mb-1.5">Водительская категория</h4>
+						<p class="font-light text-3xl md:text-4xl">B</p>
 					</div>
-					<h4 class="text-xs md:text-base uppercase mb-1.5">Водительская категория</h4>
-					<p class="font-light text-3xl md:text-4xl">B</p>
-				</div>
-				<div class="text-center mt-8">
-					<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
-						<img src="img/characteristics/icons/4.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
-					</div>
-					<h4 class="text-xs md:text-base uppercase mb-1.5">Техническое обслуживание</h4>
-					<p class="font-light text-3xl md:text-4xl">3 года</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 items-start">
-
-				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden block sm:hidden">
-					<div class="flex items-center justify-between text-xs px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors bg-gray-200">
-						<span class="uppercase">Подробные характеристики</span>
-						<button class="w-5 h-5 flex items-center">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus hidden" />							
-							<img src="img/characteristics/icons/minus.svg" class="svg minus" />							
-						</button>
-					</div>
-				</div>
-				
-				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
-					<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors bg-gray-200">
-						<span class="uppercase">Двигатель</span>
-						<button class="w-5 h-5 flex items-center">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus hidden" />							
-							<img src="img/characteristics/icons/minus.svg" class="svg minus" />							
-						</button>
-					</div>
-					<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative">
-						<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
-						</button>
-						<div>
-							<p class="font-normal underline">Модель</p>
-							<h4>D4CB</h4>
+					<div class="text-center mt-8">
+						<div class="flex items-center h-[70px] fill-white md:fill-black text-center mb-4">
+							<img src="img/characteristics/icons/4.svg" class="svg h-auto max-h-[70px] w-[60px] mx-auto"/>
 						</div>
-						<div>
-							<p class="font-normal underline">Марка</p>
-							<h4>Kia</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Экологический класс</p>
-							<h4>Евро 5</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Тип</p>
-							<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
-							<h4>96 (130) / 3 800</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
-							<h4>255 / 1 500 - 3 500</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
-							<h4>2 497 см3</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Система питания</p>
-							<h4>DELPHI</h4>
-						</div>
-						<div>
-							<p class="font-normal underline pr-6">Система выпуска</p>
-							<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
-						</div>
-					</div>
-				</div>
-				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
-					<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
-						<span class="uppercase">Двигатель</span>
-						<button class="w-5 h-5 flex items-center">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
-							<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
-						</button>
-					</div>
-					<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
-						<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
-						</button>
-						<div>
-							<p class="font-normal underline">Модель</p>
-							<h4>D4CB</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Марка</p>
-							<h4>Kia</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Экологический класс</p>
-							<h4>Евро 5</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Тип</p>
-							<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
-							<h4>96 (130) / 3 800</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
-							<h4>255 / 1 500 - 3 500</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
-							<h4>2 497 см3</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Система питания</p>
-							<h4>DELPHI</h4>
-						</div>
-						<div>
-							<p class="font-normal underline pr-6">Система выпуска</p>
-							<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
-						</div>
-					</div>
-				</div>
-				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
-					<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
-						<span class="uppercase">Двигатель</span>
-						<button class="w-5 h-5 flex items-center">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
-							<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
-						</button>
-					</div>
-					<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
-						<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
-						</button>
-						<div>
-							<p class="font-normal underline">Модель</p>
-							<h4>D4CB</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Марка</p>
-							<h4>Kia</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Экологический класс</p>
-							<h4>Евро 5</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Тип</p>
-							<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
-							<h4>96 (130) / 3 800</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
-							<h4>255 / 1 500 - 3 500</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
-							<h4>2 497 см3</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Система питания</p>
-							<h4>DELPHI</h4>
-						</div>
-						<div>
-							<p class="font-normal underline pr-6">Система выпуска</p>
-							<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
-						</div>
-					</div>
-				</div>
-				<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
-					<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
-						<span class="uppercase">Двигатель</span>
-						<button class="w-5 h-5 flex items-center">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
-							<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
-						</button>
-					</div>
-					<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
-						<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
-							<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
-						</button>
-						<div>
-							<p class="font-normal underline">Модель</p>
-							<h4>D4CB</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Марка</p>
-							<h4>Kia</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Экологический класс</p>
-							<h4>Евро 5</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Тип</p>
-							<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
-							<h4>96 (130) / 3 800</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
-							<h4>255 / 1 500 - 3 500</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
-							<h4>2 497 см3</h4>
-						</div>
-						<div>
-							<p class="font-normal underline">Система питания</p>
-							<h4>DELPHI</h4>
-						</div>
-						<div>
-							<p class="font-normal underline pr-6">Система выпуска</p>
-							<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
-						</div>
-					</div>
-				</div>
-
-				<a href="./characteristics.pdf" download class="btn bg-black text-white py-4 text-xs sm:text-base mt-5">Скачать PDF</a>
-
-			</div>	
-		
-		</div>
-
-	</section>
-
-	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
-		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
-		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
-		<div class="container">
-			<h2 class="text-h2 inline-block bg-white">Интерьер</h2>
-		</div>
-
-		<div class="container px-0 md:px-4">
-
-			<div class="swiper interioir-slider mt-5 md:mt-12 rounded-tl-[50px] md:rounded-tl-[100px]">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="img/sliders/interior/1.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/sliders/interior/2.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/sliders/interior/3.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/sliders/interior/4.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/sliders/interior/5.jpg" alt="">
+						<h4 class="text-xs md:text-base uppercase mb-1.5">Техническое обслуживание</h4>
+						<p class="font-light text-3xl md:text-4xl">3 года</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="swiper interioir-thumbs-slider hidden md:block">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/interior/thumbs/1.jpg" alt="">						
+			<div class="container">
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 items-start">
+
+					<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden block sm:hidden">
+						<div class="flex items-center justify-between text-xs px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors bg-gray-200">
+							<span class="uppercase">Подробные характеристики</span>
+							<button class="w-5 h-5 flex items-center">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus hidden" />							
+								<img src="img/characteristics/icons/minus.svg" class="svg minus" />							
+							</button>
+						</div>
 					</div>
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/interior/thumbs/2.jpg" alt="">
+					
+					<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
+						<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors bg-gray-200">
+							<span class="uppercase">Двигатель</span>
+							<button class="w-5 h-5 flex items-center">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus hidden" />							
+								<img src="img/characteristics/icons/minus.svg" class="svg minus" />							
+							</button>
+						</div>
+						<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative">
+							<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
+							</button>
+							<div>
+								<p class="font-normal underline">Модель</p>
+								<h4>D4CB</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Марка</p>
+								<h4>Kia</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Экологический класс</p>
+								<h4>Евро 5</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Тип</p>
+								<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
+								<h4>96 (130) / 3 800</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
+								<h4>255 / 1 500 - 3 500</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
+								<h4>2 497 см3</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Система питания</p>
+								<h4>DELPHI</h4>
+							</div>
+							<div>
+								<p class="font-normal underline pr-6">Система выпуска</p>
+								<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
+							</div>
+						</div>
 					</div>
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/interior/thumbs/3.jpg" alt="">
+					<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
+						<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
+							<span class="uppercase">Двигатель</span>
+							<button class="w-5 h-5 flex items-center">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
+								<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
+							</button>
+						</div>
+						<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
+							<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
+							</button>
+							<div>
+								<p class="font-normal underline">Модель</p>
+								<h4>D4CB</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Марка</p>
+								<h4>Kia</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Экологический класс</p>
+								<h4>Евро 5</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Тип</p>
+								<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
+								<h4>96 (130) / 3 800</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
+								<h4>255 / 1 500 - 3 500</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
+								<h4>2 497 см3</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Система питания</p>
+								<h4>DELPHI</h4>
+							</div>
+							<div>
+								<p class="font-normal underline pr-6">Система выпуска</p>
+								<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
+							</div>
+						</div>
 					</div>
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/interior/thumbs/4.jpg" alt="">
+					<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
+						<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
+							<span class="uppercase">Двигатель</span>
+							<button class="w-5 h-5 flex items-center">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
+								<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
+							</button>
+						</div>
+						<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
+							<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
+							</button>
+							<div>
+								<p class="font-normal underline">Модель</p>
+								<h4>D4CB</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Марка</p>
+								<h4>Kia</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Экологический класс</p>
+								<h4>Евро 5</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Тип</p>
+								<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
+								<h4>96 (130) / 3 800</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
+								<h4>255 / 1 500 - 3 500</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
+								<h4>2 497 см3</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Система питания</p>
+								<h4>DELPHI</h4>
+							</div>
+							<div>
+								<p class="font-normal underline pr-6">Система выпуска</p>
+								<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
+							</div>
+						</div>
 					</div>
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/interior/thumbs/5.jpg" alt="">
+					<div class="rounded-tl-2xl border border-black mt-5 overflow-hidden text-xs sm:text-base">
+						<div class="flex items-center justify-between font-light px-2.5 py-3.5 cursor-pointer bg-transparent transition-colors hover:bg-gray-200">
+							<span class="uppercase">Двигатель</span>
+							<button class="w-5 h-5 flex items-center">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus" />							
+								<img src="img/characteristics/icons/minus.svg" class="svg minus hidden" />							
+							</button>
+						</div>
+						<div class="px-2.5 py-2 flex flex-col gap-y-1.5 relative hidden">
+							<button class="w-5 h-5 flex items-center rotate-45 absolute right-2 bottom-2">
+								<img src="img/characteristics/icons/plus.svg" class="svg plus w-full h-full"/>							
+							</button>
+							<div>
+								<p class="font-normal underline">Модель</p>
+								<h4>D4CB</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Марка</p>
+								<h4>Kia</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Экологический класс</p>
+								<h4>Евро 5</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Тип</p>
+								<h4>Дизельный, 4-х тактный, рядный, 4-х цилиндровый,  турбонаддув с промежуточным охлаждением</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Максимальная мощность, (кВт (л.с.)/об/мин)</p>
+								<h4>96 (130) / 3 800</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Максимальный крутящий момент, (Н∙м/об/мин)</p>
+								<h4>255 / 1 500 - 3 500</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Рабочий объем цилиндров, см3</p>
+								<h4>2 497 см3</h4>
+							</div>
+							<div>
+								<p class="font-normal underline">Система питания</p>
+								<h4>DELPHI</h4>
+							</div>
+							<div>
+								<p class="font-normal underline pr-6">Система выпуска</p>
+								<h4 class="pr-6">Один глушитель, система рециркуляции отработавших газов (ERG)</h4>
+							</div>
+						</div>
+					</div>
+
+					<a href="./characteristics.pdf" download class="btn bg-black text-white py-4 text-xs sm:text-base mt-5">Скачать PDF</a>
+
+				</div>	
+			
+			</div>
+
+		</section>
+
+		<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+			<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+			<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+			<div class="container">
+				<h2 class="text-h2 inline-block bg-white">Интерьер</h2>
+			</div>
+
+			<div class="container px-0 md:px-4">
+
+				<div class="swiper interioir-slider mt-5 md:mt-12 rounded-tl-[50px] md:rounded-tl-[100px]">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/sliders/interior/1.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sliders/interior/2.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sliders/interior/3.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sliders/interior/4.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sliders/interior/5.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper interioir-thumbs-slider hidden md:block">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/interior/thumbs/1.jpg" alt="">						
+						</div>
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/interior/thumbs/2.jpg" alt="">
+						</div>
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/interior/thumbs/3.jpg" alt="">
+						</div>
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/interior/thumbs/4.jpg" alt="">
+						</div>
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/interior/thumbs/5.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="flex justify-between md:hidden">
+					<div class="swiper-interioir-button-prev w-8 h-10 ml-4 flex items-center">
+						<img src="img/icons/left.svg" />
+					</div>
+					<div class="swiper-interioir-button-next w-8 h-10 mr-4 flex items-center">
+						<img src="img/icons/right.svg" />					
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+			<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+			<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+			<div class="container">
+				<h2 class="text-h2 inline-block bg-white">Комплектации</h2>
+
+				<div class="grid-cols-2 mt-5 mx-auto hidden sm:grid">
+					<div class="text-center text-xs sm:text-base">
+						<img src="img/sliders/complectations/1.png" alt="Комплектация 1" class="max-w-full mx-auto mb-4">
+						<h5>Комплектация №1</h5>
+					</div>
+					<div class="text-center text-xs sm:text-base">
+						<img src="img/sliders/complectations/2.png" alt="Комплектация 2" class="max-w-full mx-auto mb-4">
+						<h5>Комплектация №2</h5>
+					</div>
+					<div class="text-center text-xs sm:text-base">
+						<img src="img/sliders/complectations/3.png" alt="Комплектация 3" class="max-w-full mx-auto mb-4">
+						<h5>Комплектация №3</h5>
+					</div>
+					<div class="text-center text-xs sm:text-base">
+						<img src="img/sliders/complectations/4.png" alt="Комплектация 4" class="max-w-full mx-auto mb-4">
+						<h5>Комплектация №4</h5>
+					</div>
+					<div class="text-center text-xs sm:text-base">
+						<img src="img/sliders/complectations/5.png" alt="Комплектация 5" class="max-w-full mx-auto mb-4">
+						<h5>Комплектация №5</h5>
+					</div>
+					<div class="text-center text-xs sm:text-base">
+						<img src="img/sliders/complectations/6.png" alt="Комплектация 6" class="max-w-full mx-auto mb-4">
+						<h5>Комплектация №6</h5>
+					</div>
+				</div>
+
+				<div class="swiper complectations-slider mt-5 hidden">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="text-center text-xs sm:text-base">
+								<img src="img/sliders/complectations/1.png" alt="Комплектация 1" class="max-w-full mx-auto mb-4">
+								<h5>Комплектация №1</h5>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="text-center text-xs sm:text-base">
+								<img src="img/sliders/complectations/2.png" alt="Комплектация 2" class="max-w-full mx-auto mb-4">
+								<h5>Комплектация №2</h5>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="text-center text-xs sm:text-base">
+								<img src="img/sliders/complectations/3.png" alt="Комплектация 3" class="max-w-full mx-auto mb-4">
+								<h5>Комплектация №3</h5>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="text-center text-xs sm:text-base">
+								<img src="img/sliders/complectations/4.png" alt="Комплектация 4" class="max-w-full mx-auto mb-4">
+								<h5>Комплектация №4</h5>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="text-center text-xs sm:text-base">
+								<img src="img/sliders/complectations/5.png" alt="Комплектация 5" class="max-w-full mx-auto mb-4">
+								<h5>Комплектация №5</h5>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="text-center text-xs sm:text-base">
+								<img src="img/sliders/complectations/6.png" alt="Комплектация 6" class="max-w-full mx-auto mb-4">
+								<h5>Комплектация №6</h5>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-between absolute w-full -bottom-2 z-[1]">
+						<div class="swiper-complectations-button-prev w-8 h-10 flex items-center">
+							<img src="img/icons/left.svg" />
+						</div>
+						<div class="swiper-complectations-button-next w-8 h-10 flex items-center">
+							<img src="img/icons/right.svg" />					
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+			<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+			<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+			<div class="container">
+				<h2 class="text-h2 inline-block bg-white">Экстерьер</h2>
+			</div>
+			<div class="container px-0 md:px-4">
+
+				<div class="swiper exterior-slider mt-5 md:mt-12 rounded-tl-[50px] md:rounded-tl-[100px]">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/sliders/exterior/1.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sliders/exterior/2.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sliders/exterior/3.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sliders/exterior/4.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sliders/exterior/5.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper exterior-thumbs-slider hidden md:block">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/exterior/thumbs/1.jpg" alt="">						
+						</div>
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/exterior/thumbs/2.jpg" alt="">
+						</div>
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/exterior/thumbs/3.jpg" alt="">
+						</div>
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/exterior/thumbs/4.jpg" alt="">
+						</div>
+						<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
+							<img src="img/sliders/exterior/thumbs/5.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="flex justify-between md:hidden">
+					<div class="swiper-exterior-button-prev w-8 h-10 ml-4 flex items-center">
+						<img src="img/icons/left.svg" />
+					</div>
+					<div class="swiper-exterior-button-next w-8 h-10 mr-4 flex items-center">
+						<img src="img/icons/right.svg" />					
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="py-[40px] md:py-[100px]">
+			<div class="container px-0 sm:px-4">
+				<div class="relative z-[1] bg-gray-200 flex justify-end rounded-tl-[50px] md:rounded-tl-[100px] overflow-hidden lg:overflow-visible">
+					<img src="img/key-bg.png" class="w-auto h-[110%] lg:h-auto lg:w-[45%] absolute left-1/2 translate-x-[-50%] lg:translate-x-0 lg:left-10 -top-[5%] lg:top-0 xl:-top-5 z-[-1] opacity-20 lg:opacity-100" />
+					<div class="w-full lg:w-1/2">
+						<form class="flex flex-col items-center gap-y-7 py-12 px-6 md:px-20 mx-auto">
+							<h3 class="text-center uppercase text-xs sm:text-base">Получите прайс-лист на e-mail</h3>
+							<input type="text" class="w-full" placeholder="Ваше имя">
+							<input type="tel" class="w-full" placeholder="+7 (999) 999-99-99">
+							<button class="btn bg-black text-white py-3.5 text-xs sm:text-base w-full">Получить прайс-лист</button>
+						</form>
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<div class="flex justify-between block md:hidden">
-				<div class="swiper-interioir-button-prev w-8 h-10 ml-4 flex items-center">
-					<img src="img/icons/left.svg" />
-				</div>
-				<div class="swiper-interioir-button-next w-8 h-10 mr-4 flex items-center">
-					<img src="img/icons/right.svg" />					
-				</div>
+		<section class="relative z-[1] pt-[40px] md:pt-[100px]">
+			<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+			<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+			<div class="container">
+				<h2 class="text-h2 inline-block bg-white">Видеообзоры</h2>
 			</div>
+		</section>
 
-		</div>
-	</section>
+		<section class="relative z-[1] py-[40px] md:py-[100px]">
+			<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
+			<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
+			<div class="container relative z-[1] overflow-hidden sm:overflow-visible">
+				<h2 class="text-h2 inline-block bg-white mb-5 sm:mb-16">Владельцам</h2>
 
-	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
-		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
-		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
-		<div class="container">
-			<h2 class="text-h2 inline-block bg-white">Комплектации</h2>
+				<img src="img/wheel-bg.png" class="absolute w-[55%] sm:w-[40%] -right-6 sm:right-0 top-1 sm:-top-2 opacity-20 lg:opacity-100" />
 
-			<div class="grid grid-cols-2 mt-5 mx-auto">
-				<div class="text-center text-xs sm:text-base">
-					<img src="img/sliders/complectations/1.png" alt="Комплектация 1" class="max-w-full mx-auto mb-4">
-					<h5>Комплектация 1</h5>
-				</div>
-				<div class="text-center text-xs sm:text-base">
-					<img src="img/sliders/complectations/2.png" alt="Комплектация 2" class="max-w-full mx-auto mb-4">
-					<h5>Комплектация 2</h5>
-				</div>
-				<div class="text-center text-xs sm:text-base">
-					<img src="img/sliders/complectations/3.png" alt="Комплектация 3" class="max-w-full mx-auto mb-4">
-					<h5>Комплектация 3</h5>
-				</div>
-				<div class="text-center text-xs sm:text-base">
-					<img src="img/sliders/complectations/4.png" alt="Комплектация 4" class="max-w-full mx-auto mb-4">
-					<h5>Комплектация 4</h5>
-				</div>
-				<div class="text-center text-xs sm:text-base">
-					<img src="img/sliders/complectations/5.png" alt="Комплектация 5" class="max-w-full mx-auto mb-4">
-					<h5>Комплектация 5</h5>
-				</div>
-				<div class="text-center text-xs sm:text-base">
-					<img src="img/sliders/complectations/6.png" alt="Комплектация 6" class="max-w-full mx-auto mb-4">
-					<h5>Комплектация 6</h5>
-				</div>
-			</div>
-
-		</div>
-
-	</section>
-
-	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
-		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
-		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
-		<div class="container">
-			<h2 class="text-h2 inline-block bg-white">Экстерьер</h2>
-		</div>
-		<div class="container px-0 md:px-4">
-
-			<div class="swiper exterior-slider mt-5 md:mt-12 rounded-tl-[50px] md:rounded-tl-[100px]">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="img/sliders/exterior/1.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/sliders/exterior/2.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/sliders/exterior/3.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/sliders/exterior/4.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/sliders/exterior/5.jpg" alt="">
-					</div>
-				</div>
-			</div>
-
-			<div class="swiper exterior-thumbs-slider hidden md:block">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/exterior/thumbs/1.jpg" alt="">						
-					</div>
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/exterior/thumbs/2.jpg" alt="">
-					</div>
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/exterior/thumbs/3.jpg" alt="">
-					</div>
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/exterior/thumbs/4.jpg" alt="">
-					</div>
-					<div class="swiper-slide transition-opacity opacity-50 cursor-pointer">
-						<img src="img/sliders/exterior/thumbs/5.jpg" alt="">
-					</div>
-				</div>
-			</div>
-
-			<div class="flex justify-between block md:hidden">
-				<div class="swiper-exterior-button-prev w-8 h-10 ml-4 flex items-center">
-					<img src="img/icons/left.svg" />
-				</div>
-				<div class="swiper-exterior-button-next w-8 h-10 mr-4 flex items-center">
-					<img src="img/icons/right.svg" />					
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-	<section class="py-[40px] md:py-[100px]">
-		<div class="container px-0 sm:px-4">
-			<div class="relative z-[1] bg-gray-200 flex justify-end rounded-tl-[50px] md:rounded-tl-[100px] overflow-hidden lg:overflow-visible">
-				<img src="img/key-bg.png" class="w-auto h-[110%] lg:h-auto lg:w-[45%] absolute left-1/2 translate-x-[-50%] lg:translate-x-0 lg:left-10 -top-[5%] lg:top-0 xl:-top-5 z-[-1] opacity-20 lg:opacity-100" />
 				<div class="w-full lg:w-1/2">
-					<form class="flex flex-col items-center gap-y-7 py-12 px-6 md:px-20 mx-auto">
-						<h3 class="text-center uppercase text-xs sm:text-base">Получите прайс-лист на e-mail</h3>
-						<input type="text" class="w-full" placeholder="Ваше имя">
-						<input type="tel" class="w-full" placeholder="+7 (999) 999-99-99">
-						<button class="btn bg-black text-white py-3.5 text-xs sm:text-base w-full">Получить прайс-лист</button>
-					</form>
+					<div>
+						<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Онлайн-запись на сервис</h3>
+						<p class="mt-2 mb-3 font-light text-base sm:text-xl hidden">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
+					</div>
+					<div>
+						<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer pl-4 text-white bg-black">Аксессуары</h3>
+						<p class="mt-2 mb-3 font-light text-base sm:text-xl">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
+					</div>
+					<div>
+						<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Запчасти</h3>
+						<p class="mt-2 mb-3 font-light text-base sm:text-xl hidden">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
+					</div>
+					<div>
+						<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Расчет стоимости ТО</h3>
+						<p class="mt-2 mb-3 font-light text-base sm:text-xl hidden">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
+					</div>
 				</div>
+
 			</div>
-		</div>
-	</section>
-
-	<section class="relative z-[1] pt-[40px] md:pt-[100px]">
-		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
-		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
-		<div class="container">
-			<h2 class="text-h2 inline-block bg-white">Видеообзоры</h2>
-		</div>
-	</section>
-
-	<section class="relative z-[1] py-[40px] md:py-[100px]">
-		<img src="img/decor-line-black.png" class="absolute w-full h-[50px] top-[140px] left-0 right-0 hidden md:block z-[-1]" />
-		<img src="img/decor-line-black.png" class="absolute w-full h-[25px] top-[60px] left-0 right-0 block md:hidden z-[-1]" />
-		<div class="container relative z-[1] overflow-hidden sm:overflow-visible">
-			<h2 class="text-h2 inline-block bg-white mb-5 sm:mb-16">Владельцам</h2>
-
-			<img src="img/wheel-bg.png" class="absolute w-[55%] sm:w-[40%] -right-6 sm:right-0 top-1 sm:-top-2 opacity-20 lg:opacity-100" />
-
-			<div class="w-full lg:w-1/2">
-				<div>
-					<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Онлайн-запись на сервис</h3>
-					<p class="mt-2 mb-3 font-light text-base sm:text-xl hidden">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
-				</div>
-				<div>
-					<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer pl-4 text-white bg-black">Аксессуары</h3>
-					<p class="mt-2 mb-3 font-light text-base sm:text-xl">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
-				</div>
-				<div>
-					<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Запчасти</h3>
-					<p class="mt-2 mb-3 font-light text-base sm:text-xl hidden">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
-				</div>
-				<div>
-					<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Расчет стоимости ТО</h3>
-					<p class="mt-2 mb-3 font-light text-base sm:text-xl hidden">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
-				</div>
-			</div>
-
-		</div>
-	</section>
+		</section>
+	</main>
 
 	<footer class="relative z-[1] text-white">
 		<img src="img/footer-bg.png" class="absolute w-full h-full left-0 top-0 z-[-1] object-cover object-left-top hidden sm:block" />

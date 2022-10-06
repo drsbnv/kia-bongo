@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Thumbs, Controller } from 'swiper';
+import Swiper, { Navigation, Controller } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -43,3 +43,33 @@ const exteriorSlider = new Swiper('.exterior-slider', {
 
 exteriorThumbsSlider.controller.control = exteriorSlider;
 exteriorSlider.controller.control = exteriorThumbsSlider;
+
+let complectSlider = null;
+
+const initComplectSlider = () => {
+	let windowWidth = window.innerWidth;
+	const block = document.querySelector('.complectations-slider');
+	if(windowWidth < 640){
+		complectSlider = new Swiper(block, {
+			loop: true,
+			modules: [Navigation],
+			navigation: {
+				nextEl: '.swiper-complectations-button-next',
+				prevEl: '.swiper-complectations-button-prev',
+			},
+		});
+		block.classList.remove('hidden');
+	}
+	if(windowWidth >= 640 ){
+		if (complectSlider && complectSlider.destroy) {
+			complectSlider.destroy(false, true);
+			block.classList.add('hidden');
+		}
+	}
+}
+
+initComplectSlider();
+
+window.addEventListener('resize', event => {
+	initComplectSlider();
+})

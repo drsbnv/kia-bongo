@@ -25,3 +25,24 @@
 .swiper-slide-active{
   @apply opacity-100;
 }
+
+#video-modal{
+  .video-wrap{
+    padding-top: 56.25%;
+  }
+  iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-width: 0;
+    outline-width: 0;
+  }
+}
+
+.modal-content{
+  &.show{
+    @apply opacity-100 translate-y-0;
+  }
+}

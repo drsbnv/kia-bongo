@@ -1,5 +1,4 @@
 const items = document.querySelectorAll('.accordion-item h3');
-console.log(items)
 items.forEach(item => {
 	item.addEventListener('click', e => {
 		if(!item.nextSibling.nextElementSibling.classList.contains('opacity-0')){

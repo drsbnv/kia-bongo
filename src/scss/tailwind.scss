@@ -46,3 +46,28 @@
     @apply opacity-100 translate-y-0;
   }
 }
+
+.characteristics-toggle-btn, .characteristics-toggle-whow-more-btn{
+  @apply h-[50px] sm:h-[53px] flex items-center justify-between font-light px-2 cursor-pointer select-none bg-transparent transition-colors hover:bg-gray-200;
+  .plus{
+    display: block;
+  }
+  .minus{
+    display: none;
+  }
+  ~ div {
+    display: none;
+  }
+  &.active{
+    @apply bg-gray-200;
+    .plus{
+      display: none;
+    }
+    .minus{
+      display: block;
+    }
+    ~ div {
+      display: block;
+    }
+  }
+}

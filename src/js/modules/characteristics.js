@@ -1,6 +1,5 @@
 const charData = require('./characteristicsData.js')
 function strOutput(arr){
-	//console.log(arr)
 	let str = '';
 	arr.forEach((el, idx) => {
 		const padding = arr.length == idx+1 ? 'pr-6' : ''

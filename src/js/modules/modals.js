@@ -6,7 +6,7 @@ document.querySelectorAll('.modal-overlay').forEach(el => {
 	});
 
 	el.addEventListener('click', event => {
-		console.log(event.target.dataset.close)
+		//console.log(event.target.dataset.close)
 		if(typeof event.target.dataset.close != 'undefined'){
 			closeModal(el)
 		}

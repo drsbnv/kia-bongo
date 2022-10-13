@@ -12,6 +12,8 @@ const videos = [
 	{'videoId': 'FNPY8RYEZBI', 'title': 'Kia Bongo 3 на заказ из Южной Кореи 4wd'},
 	{'videoId': '0JWcAUc-VcM', 'title': 'KIA BONGO 3, АВТООБЗОР дизель 2,9 турбо, 5лет в России'},
 	{'videoId': 'SyQsaNIWPP0', 'title': 'Обзор KIA Bongo 3 K4000 Рефрижераторный фургон +5С…-20С, фургон 12м3, 5 европаллет'},
+	{'videoId': 'spON6LceINw', 'title': 'Kia Bongo 3 Offroad tires (DOUBLE CAB ASH GRAY)'},
+	{'videoId': 'LpoQItNb_xk', 'title': 'EURO 4 : KIA BONGO 3 4X4 DOUBLE CAB FRONTDRIVE'},
 ];
 
 function videoHtml(id, title, colSpan, slider = false){

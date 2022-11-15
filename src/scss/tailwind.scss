@@ -11,6 +11,7 @@
   	// font-size: 15px;
   }
   input[type="text"],
+  input[type="email"],
   input[type="tel"], {
     @apply text-center text-black uppercase p-3 rounded-tl-2xl transition-all focus:rounded-br-2xl placeholder-[#b5b7bb] outline-0;
   }

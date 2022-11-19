@@ -56,7 +56,7 @@
 				<nav class="flex flex-col sm:flex-row sm:justify-between flex-grow flex-wrap gap-5 text-xs lg:text-base">
 					<a href="#specifications" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 font-bold">Характеристики</a>
 					<a href="#complectation" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">Комплектация</a>
-					<a href="#" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 order-last md:order-none">Записаться на тест-драйв</a>
+					<a href="#common-modal" class="popup-link font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 order-last md:order-none" data-caption="Записаться на тест-драйв">Записаться на тест-драйв</a>
 					<a href="#owners" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">Владельцам</a>
 				</nav>
 				<a href="tel:+79608249866" class="absolute top-5 right-4 sm:relative sm:top-0 sm:right-0 bg-white text-xs lg:text-base text-black whitespace-nowrap py-2 px-2.5 rounded-tl-2xl transition-all hover:rounded-br-2xl">+7 (960) 824-98-66</a>
@@ -70,13 +70,34 @@
 			<div class="container px-0 py-10 h-full relative">
 				<h1 class="text-h1 sm:mb-12 pl-4">Kia Bongo</h1>
 				<p class="text-h3 uppercase leading-[1.2] lg:mb-20 pl-4">Маленький помощник<br class="hidden lg:block"> вашего бизнеса</p>
-				<img class="relative lg:absolute lg:right-0 lg:bottom-0 lg:max-w-[660px] mb-5 lg:mb-0 px-0 sm:px-4" src="img/banner-bg.png" alt="ALT">
+				<img class="relative lg:absolute lg:right-0 lg:bottom-0 lg:max-w-[660px] xl:max-w-[780px] mb-5 lg:mb-0 px-0 sm:px-4" src="img/banner-bg.png" alt="ALT">
 				<form class="flex flex-col gap-y-7 px-4">
-					<input type="text" name="name" class="w-full lg:w-64" placeholder="Ваше имя">
-					<input type="tel" name="phone" class="w-full lg:w-64" placeholder="+7 (999) 999-99-99">
-					<input type="email" name="email" class="w-full lg:w-64" placeholder="E-mail">
-					<input type="text" name="inn" class="w-full lg:w-64" placeholder="ИНН организации">
-					<button class="btn btn-o w-full lg:w-64">Оставить заявку</button>
+					<div class="w-full lg:w-80">
+						<input type="text" name="name" class="w-full" placeholder="Ваше имя">
+						<div class="error-message text-xs text-red hidden name"></div>
+					</div>
+					<div class="w-full lg:w-80">
+						<input type="tel" name="phone" class="w-full" placeholder="+7 (999) 999-99-99*">
+						<div class="error-message text-xs text-red hidden phone">Веден некорректный номер телефона</div>
+					</div>
+					<div class="w-full lg:w-80">
+						<input type="email" name="email" class="w-full" placeholder="E-mail">
+						<div class="error-message text-xs text-red hidden email">Веден некорректный email</div>
+					</div>
+					<div class="w-full lg:w-80">
+						<input type="text" name="inn" class="w-full" placeholder="ИНН организации">
+						<div class="error-message text-xs text-red hidden inn">Веден некорректный ИНН</div>
+					</div>
+					<label class="cursor-pointer flex items-center flex-wrap lg:w-80">
+						<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
+						<div class="flex flex-wrap gap-x-2">
+							<span class="fake-checkbox-white mt-0.5 w-4 h-4 border border-dark inline-block flex-shrink-0 transition-all relative"></span>
+							<span>Я согласен на</span> <a href="javascript:void(0)" class="popup-link policy-popup-link text-white underline transition-all hover:no-underline">обработку персональных данных</a>
+						</div>
+						<div class="error-message text-xs text-red mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+					</label>
+					<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
+					<div class="w-full lg:w-80"><input type="submit" class="btn btn-o w-full" value="Отправить"></div>
 				</form>
 			</div>
 		</div>
@@ -265,68 +286,58 @@
 				<h2 class="text-h2 inline-block bg-white">Комплектации</h2>
 
 				<div class="grid-cols-2 mt-5 mx-auto hidden sm:grid">
-					<div class="text-center text-xs sm:text-base">
-						<img src="img/sliders/complectations/1.png" alt="Комплектация 1" class="max-w-full mx-auto mb-4">
-						<h5>Комплектация №1</h5>
+					<div class="text-center text-xs sm:text-base mx-4">
+						<img src="img/sliders/models/bongo-bort.png" alt="Бортовой грузовик" class="max-w-full mx-auto my-8">
+						<h5 class="text-2xl">Бортовой грузовик</h5>
 					</div>
-					<div class="text-center text-xs sm:text-base">
-						<img src="img/sliders/complectations/2.png" alt="Комплектация 2" class="max-w-full mx-auto mb-4">
-						<h5>Комплектация №2</h5>
+					<div class="text-center text-xs sm:text-base mx-4">
+						<img src="img/sliders/models/bongo-tent.png" alt="Tентовый грузовик" class="max-w-full mx-auto my-8">
+						<h5 class="text-2xl">Tентовый грузовик</h5>
 					</div>
-					<div class="text-center text-xs sm:text-base">
-						<img src="img/sliders/complectations/3.png" alt="Комплектация 3" class="max-w-full mx-auto mb-4">
-						<h5>Комплектация №3</h5>
+					<div class="text-center text-xs sm:text-base mx-4">
+						<img src="img/sliders/models/bongo-izo.png" alt="Изотермический фургон" class="max-w-full mx-auto my-8">
+						<h5 class="text-2xl">Изотермический фургон</h5>
 					</div>
-					<div class="text-center text-xs sm:text-base">
-						<img src="img/sliders/complectations/4.png" alt="Комплектация 4" class="max-w-full mx-auto mb-4">
-						<h5>Комплектация №4</h5>
+					<div class="text-center text-xs sm:text-base mx-4">
+						<img src="img/sliders/models/bongo-ref.png" alt="Рефрижераторный фургон" class="max-w-full mx-auto my-8">
+						<h5 class="text-2xl">Рефрижераторный фургон</h5>
 					</div>
-					<div class="text-center text-xs sm:text-base">
-						<img src="img/sliders/complectations/5.png" alt="Комплектация 5" class="max-w-full mx-auto mb-4">
-						<h5>Комплектация №5</h5>
-					</div>
-					<div class="text-center text-xs sm:text-base">
-						<img src="img/sliders/complectations/6.png" alt="Комплектация 6" class="max-w-full mx-auto mb-4">
-						<h5>Комплектация №6</h5>
+					<div class="text-center text-xs sm:text-base mx-4">
+						<img src="img/sliders/models/bongo-piramida.png" alt="Бортовой грузовик с пирамидой" class="max-w-full mx-auto my-8">
+						<h5 class="text-2xl">Бортовой грузовик с&nbsp;пирамидой</h5>
 					</div>
 				</div>
 
 				<div class="swiper complectations-slider mt-5 hidden">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<div class="text-center text-xs sm:text-base">
-								<img src="img/sliders/complectations/1.png" alt="Комплектация 1" class="max-w-full mx-auto mb-4">
-								<h5>Комплектация №1</h5>
+							<div class="text-center text-xs sm:text-base mx-4">
+								<img src="img/sliders/models/bongo-bort.png" alt="Бортовой грузовик" class="max-w-full mx-auto my-8">
+								<h5 class="text-2xl">Бортовой грузовик</h5>
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="text-center text-xs sm:text-base">
-								<img src="img/sliders/complectations/2.png" alt="Комплектация 2" class="max-w-full mx-auto mb-4">
-								<h5>Комплектация №2</h5>
+							<div class="text-center text-xs sm:text-base mx-4">
+								<img src="img/sliders/models/bongo-tent.png" alt="Tентовый грузовик" class="max-w-full mx-auto my-8">
+								<h5 class="text-2xl">Tентовый грузовик</h5>
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="text-center text-xs sm:text-base">
-								<img src="img/sliders/complectations/3.png" alt="Комплектация 3" class="max-w-full mx-auto mb-4">
-								<h5>Комплектация №3</h5>
+							<div class="text-center text-xs sm:text-base mx-4">
+								<img src="img/sliders/models/bongo-izo.png" alt="Изотермический фургон" class="max-w-full mx-auto my-8">
+								<h5 class="text-2xl">Изотермический фургон</h5>
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="text-center text-xs sm:text-base">
-								<img src="img/sliders/complectations/4.png" alt="Комплектация 4" class="max-w-full mx-auto mb-4">
-								<h5>Комплектация №4</h5>
+							<div class="text-center text-xs sm:text-base mx-4">
+								<img src="img/sliders/models/bongo-ref.png" alt="Рефрижераторный фургон" class="max-w-full mx-auto my-8">
+								<h5 class="text-2xl">Рефрижераторный фургон</h5>
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="text-center text-xs sm:text-base">
-								<img src="img/sliders/complectations/5.png" alt="Комплектация 5" class="max-w-full mx-auto mb-4">
-								<h5>Комплектация №5</h5>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="text-center text-xs sm:text-base">
-								<img src="img/sliders/complectations/6.png" alt="Комплектация 6" class="max-w-full mx-auto mb-4">
-								<h5>Комплектация №6</h5>
+							<div class="text-center text-xs sm:text-base mx-4">
+								<img src="img/sliders/models/bongo-piramida.png" alt="Бортовой грузовик с пирамидо&nbsp;" class="max-w-full mx-auto my-8">
+								<h5 class="text-2xl">Бортовой грузовик с&nbsp;пирамидой</h5>
 							</div>
 						</div>
 					</div>
@@ -408,15 +419,36 @@
 		<section class="py-[40px] md:py-[100px]">
 			<div class="container px-0 sm:px-4">
 				<div class="relative z-[1] bg-gray-200 flex justify-end rounded-tl-[50px] md:rounded-tl-[100px] overflow-hidden lg:overflow-visible">
-					<img src="img/key-bg.png" class="w-auto h-[110%] lg:h-auto lg:w-[45%] absolute left-1/2 translate-x-[-50%] lg:translate-x-0 lg:left-10 -top-[5%] lg:top-0 xl:-top-5 z-[-1] opacity-20 lg:opacity-100" />
+					<img src="img/key-bg.png" class="w-100 h-auto absolute m-auto top-0 left-0 bottom-0 right-0 lg:m-0 lg:h-auto lg:w-[55%] lg:translate-x-0 lg:-left-5 lg:-top-5 z-[-1] opacity-20 lg:opacity-100" />
 					<div class="w-full lg:w-1/2">
 						<form class="flex flex-col items-center gap-y-7 py-12 px-6 md:px-20 mx-auto">
-							<h3 class="text-center uppercase text-xs sm:text-base">Получите прайс-лист на e-mail</h3>
-							<input type="text" name="name" class="w-full" placeholder="Ваше имя">
-							<input type="tel" name="phone" class="w-full" placeholder="+7 (999) 999-99-99">
-							<input type="email" name="email" class="w-full" placeholder="E-mail">
-							<input type="text" name="inn" class="w-full" placeholder="ИНН организации">
-							<button class="btn bg-black text-white py-3.5 text-xs sm:text-base w-full">Получить прайс-лист</button>
+							<h3 class="text-center uppercase text-2xl lg:text-lg">Получите прайс-лист на&nbsp;e&#8209;mail</h3>
+							<div class="w-full">
+								<input type="text" name="name" class="w-full" placeholder="Ваше имя">
+								<div class="error-message text-xs text-red hidden name"></div>
+							</div>
+							<div class="w-full">
+								<input type="tel" name="phone" class="w-full" placeholder="+7 (999) 999-99-99*">
+								<div class="error-message text-xs text-red hidden phone">Веден некорректный номер телефона</div>
+							</div>
+							<div class="w-full">
+								<input type="email" name="email" class="w-full" placeholder="E-mail">
+								<div class="error-message text-xs text-red hidden email">Веден некорректный email</div>
+							</div>
+							<div class="w-full">
+								<input type="text" name="inn" class="w-full" placeholder="ИНН организации">
+								<div class="error-message text-xs text-red hidden inn">Веден некорректный ИНН</div>
+							</div>
+							<label class="cursor-pointer flex items-center flex-wrap w-full">
+								<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
+								<div class="flex flex-wrap gap-x-2">
+									<span class="fake-checkbox-black mt-0.5 w-4 h-4 border border-dark inline-block flex-shrink-0 transition-all relative"></span>
+									<span>Я согласен на</span> <a href="#policy-modal" class="popup-link policy-popup-link text-black underline transition-all hover:no-underline">обработку персональных данных</a>
+								</div>
+								<div class="error-message text-xs text-red mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+							</label>
+							<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
+							<div class="w-full"><input type="submit" class="btn bg-black text-white py-3.5 text-xs sm:text-base w-full" value="Получить прайс-лист"></div>
 						</form>
 					</div>
 				</div>
@@ -464,23 +496,23 @@
 							Датой начала гарантийного периода является дата передачи автомобиля клиенту.<br><br>
 							Обязательным условием для сохранения действия гарантии является выполнение регламентного технического обслуживания согласно руководству по&nbsp;эксплуатации и&nbsp;руководству по&nbsp;гарантийному обслуживанию в&nbsp;полном объеме с&nbsp;использованием оригинальных запасных частей Kia, оригинальных расходных материалов, масел, смазок и&nbsp;других жидкостей. Остальные условия и&nbsp;ограничения остаются неизменными и&nbsp;указаны в&nbsp;руководстве по&nbsp;эксплуатации ТС&nbsp;Kia, руководстве по&nbsp;гарантийному обслуживанию и&nbsp;гарантийной политике дистрибьютора.<br><br>
 							Гарантийные обязательства на&nbsp;надстройку и&nbsp;дополнительное оборудование несет производитель и/или установщик надстройки и&nbsp;дополнительного оборудования.<br><br>
-							Внимание! Акция на&nbsp;расширенную гарантию ограничена.</p>
+							<i>Внимание! Акция на&nbsp;расширенную гарантию ограничена.</i></p>
 					</div>
 					<div class="accordion-item relative">
-						<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Онлайн-запись на сервис</h3>
-						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
+						<a href="#common-modal" class="popup-link text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4" data-caption="Онлайн-запись на сервис">Онлайн-запись на сервис</a>
+						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3"></p>
 					</div>
 					<div class="accordion-item realative">
 						<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Аксессуары</h3>
-						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
+						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков.</p>
 					</div>
 					<div class="accordion-item relative">
 						<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Запчасти</h3>
-						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
+						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3"><a href="#">Скачать список запчастей</a>.</p>
 					</div>
 					<div class="accordion-item relative">
 						<h3 class="text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4">Расчет стоимости ТО</h3>
-						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3">У нас вы можете приобрести различные аксессуары для Kia Bongo от чехлов на сиденья до стильных литых дисков. (Возможно здесь будет список аксессуаров)</p>
+						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3"><a href="#">Скачать цены на ТО</a>.</p>
 					</div>
 				</div>
 
@@ -526,6 +558,7 @@
 		</div>
 	</footer>
 
+	<!-- MODALS -->
 	<div class="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-60 z-10 overflow-y-auto hidden modal-overlay" id="video-modal" data-close data-type="video">
 		<div class="modal-content relative top-10 md:top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 opacity-0 transition-all duration-1000 max-w-5xl w-full bg-white pt-10 pb-3 sm:pb-5 px-3 px-5">
 			<div class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer" data-close><img src="img/characteristics/icons/plus.svg" class="rotate-45" alt="Close" data-close></div>
@@ -535,6 +568,179 @@
 			</div>
 		</div>
 	</div>
+	<div class="fixed w-screen h-screen left-0 top-0 bg-dark bg-opacity-90 z-20 overflow-x-hidden overflow-y-auto hidden modal-overlay" id="common-modal" data-close>
+		<div class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-xl w-full bg-white font-medium text-dark py-8 px-4 sm:p-8">
+			<div class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45" data-close><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-close>
+				<line y1="9.5" x2="20" y2="9.5" stroke="black"/>
+				<line x1="9.5" y1="20" x2="9.5" stroke="black"/>
+				</svg>
+			</div>
+			<p class="caption text-center text-3xl mb-10">Обратная связь</p>
+			<form class="flex flex-col gap-4 sm:gap-5" id="rating-form">
+				<div class="w-full">
+					<input type="text" name="name" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="Ваше имя">
+					<div class="error-message text-xs text-red hidden name"></div>
+				</div>
+				<div class="w-full">
+					<input type="tel" name="phone" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="+7 (999) 999-99-99*">
+					<div class="error-message text-xs text-red hidden phone">Веден некорректный номер телефона</div>
+				</div>
+				<div class="w-full">
+					<input type="email" name="email" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="E-mail">
+					<div class="error-message text-xs text-red hidden email">Веден некорректный email</div>
+				</div>
+				<div class="w-full">
+					<input type="text" name="inn" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="ИНН организации">
+					<div class="error-message text-xs text-red hidden inn">Веден некорректный ИНН</div>
+				</div>
+				<label class="cursor-pointer flex items-center flex-wrap">
+					<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
+					<div class="flex flex-wrap gap-x-2">
+						<span class="fake-checkbox-black mt-0.5 w-4 h-4 border border-dark inline-block flex-shrink-0 transition-all relative"></span>
+						<span>Я согласен на</span> <a href="#policy-modal" class="popup-link policy-popup-link text-black underline transition-all hover:no-underline">обработку персональных данных</a>
+					</div>
+					<div class="error-message text-xs text-red mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+				</label>
+				<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
+				<input type="submit" class="bg-yellow px-4 py-3 transition-colors hover:bg-opacity-90 text-white font-medium cursor-pointer" value="Отправить">
+			</form>
+		</div>
+	</div>
+	<div class="fixed w-screen h-screen left-0 top-0 bg-dark bg-opacity-90 z-30 overflow-x-hidden overflow-y-auto hidden modal-overlay" id="policy-modal" data-close>
+		<div class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-5xl w-full bg-white font-medium text-dark py-8 px-4 sm:p-8">
+			<div class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45" data-close><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-close>
+				<line y1="9.5" x2="20" y2="9.5" stroke="black"/>
+				<line x1="9.5" y1="20" x2="9.5" stroke="black"/>
+				</svg>
+			</div>
+			<h2 class="text-base sm:text-xl uppercase pb-4 mb-4 border-b border-gray-100 font-medium">Согласие на обработку персональных данных посетителей сайта</h2>
+			<div class="policy-text text-xs sm:text-base">
+				<ol>
+				<li>
+				<p>
+				Пользователь, проходя регистрацию на Сайте
+				<a href="#">__________</a> и его поддоменов, принимает настоящее Согласие на
+				обработку персональных данных (далее – Согласие).
+				</p>
+				<p>
+				Действуя свободно, своей волей и в своем интересе, а также подтверждая свою
+				дееспособность, Пользователь дает свое согласие Общество с ограниченной
+				ответственностью «__________» зарегистрированному по адресу __________ (далее — Оператор) на обработку своих персональных данных со
+				следующими условиями:
+				</p>
+				</li>
+				<li>
+				<p>Данное Согласие дается на автоматизированную обработку персональных данных.</p>
+				<p>Согласие дается на обработку следующих моих персональных данных:</p>
+				<ol class="ol_bracket">
+				<li>Специальные категории персональных данных – не обрабатываются.</li>
+				<li>Биометрические персональные данные – не обрабатываются.</li>
+				<li>
+				Персональные данные, не являющиеся специальными или биометрическими:<br>
+				фамилия, имя, отчество; номер телефона; адрес электронной почты; пол; семейное
+				положение; дата рождения; адрес места жительства, образ жизни и поведение субъекта
+				(в том числе, в сети Интернет), сфера деятельности, место работы и должность (род
+				занятий), иные данные и информация, предоставленные и предоставляемые субъектом или
+				ставшие известными ООО «Киа Россия и СНГ» в целях, указанных в настоящем согласии.
+				</li>
+				</ol>
+				</li>
+				<li>
+				<p>
+				Настоящее Согласие дается на выполнение следующих действий (операций), совершаемых с
+				использованием средств автоматизации или без использования таких средств с
+				персональными данными: сбор, запись, систематизация, накопление, хранение, уточнение
+				(обновление, изменение), извлечение, использование, передача, в том числе
+				трансграничная (распространение в случаях и в объеме, предусмотренных
+				законодательством РФ, в том числе предоставление в государственные органы и иные
+				организации), деперсонализация, блокирование, удаление, уничтожение персональных
+				данных в целях:
+				</p>
+				<ol class="ol_latin">
+				<li>продвижения и совершенствование товаров и услуг бренда ___;</li>
+				<li>
+				получения и исследования статистических данных об объемах продаж и качестве услуг
+				бренда ___;
+				</li>
+				<li>
+				изучения конъюнктуры рынка автомобилей, автомобильных запасных частей и аксессуаров;
+				</li>
+				<li>
+				сбора статистики по посетителям Сайта для улучшения качества работы Сайта и его
+				содержания;
+				</li>
+				<li>
+				осуществления других видов деятельности в рамках законодательства РФ с обязательным
+				выполнением требований законодательства РФ в области персональных данных.
+				</li>
+				<li>
+				сбора данных по поведению на сайте kia-samara.ru (сервисами веб-аналитики, метрическими
+				программами). Подробная информация приведена на официальном сайте ООО «___________» в разделе в разделе «Правовая информация» на странице «Файлы Cookie и анализ
+				посещения сайта»
+				<a href="#">_____________</a></li>
+				<p>
+				При обработке персональных данных и информации в целях, не связанных с направлением
+				информации рекламного характера, могут использоваться e-mail рассылка (направление
+				сообщений на электронную почту), СМС-рассылка (служба коротких сообщений), почтовая
+				рассылка, телефонные звонки, любые иные средства связи, сеть Интернет. Для целей
+				направления информации рекламного характера могут использоваться только варианты
+				связи, отмеченные выше, либо на которые отдельно дано согласие.
+				</p>
+				</ol>
+				</li>
+				<li>
+				Основанием для обработки персональных данных является: ст. 24 Конституции Российской
+				Федерации; настоящее Согласие на обработку персональных данных.
+				</li>
+				<li>
+				Оператор персональных данных ведет деятельность на территории Российской Федерации в
+				соответствии с законодательством Российской Федерации. Предлагаемые товары/работы/услуги
+				доступны к получению на территории Российской Федерации. Мониторинг потребительского
+				поведения субъектов, находящихся за пределами Российской Федерации, не ведется.
+				</li>
+				<li>
+				Обработка персональных данных может быть прекращена по запросу субъекта персональных
+				данных. Хранение персональных данных, зафиксированных на бумажных носителях,
+				осуществляется согласно Федеральному закону №125-ФЗ «Об архивном деле в Российской
+				Федерации» и иным нормативно правовым актам в области архивного дела и архивного
+				хранения.
+				</li>
+				<li>
+				Согласие может быть отозвано субъектом персональных данных или его представителем путем
+				направления письменного заявления заказным письмом с уведомлением Оператору по адресу,
+				указанному в начале данного Согласия.
+				</li>
+				<li>
+				В случае отзыва субъектом персональных данных или его представителем согласия на
+				обработку персональных данных Оператор вправе продолжить обработку персональных данных
+				без согласия субъекта персональных данных при наличии оснований, указанных в пунктах 2 –
+				11 части 1 статьи 6, части 2 статьи 10 и части 2 статьи 11 Федерального закона №152-ФЗ
+				«О персональных данных» от 27.07.2006 г.
+				</li>
+				<li>
+				Настоящее согласие действует с момента проставления отметки и до момента прекращения
+				обработки персональных данных, указанных в п.7 и п.8 данного Согласия.
+				</li>
+				<li>
+				Политика обработки данных ООО «_____________», а также описание прав субъекта
+				персональных данных и возможности их реализации приведены на официальном сайте ООО «__________» в разделе «Правовая информация»
+				<a href="#">_________________</a></li>
+				</ol>
+				</div>
+		</div>
+	</div>
+	<div class="fixed w-screen h-screen left-0 top-0 bg-dark bg-opacity-90 z-20 overflow-x-hidden overflow-y-auto hidden modal-overlay" id="message-modal" data-close>
+		<div class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-xl w-full bg-white font-medium text-dark py-8 px-4 sm:p-8">
+			<div class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45" data-close><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-close>
+				<line y1="9.5" x2="20" y2="9.5" stroke="black"/>
+				<line x1="9.5" y1="20" x2="9.5" stroke="black"/>
+				</svg>
+			</div>
+			<div class="w-20 h-20 mx-auto mb-10" id="icon"></div>
+			<p class="text-center text-lg mb-10"></p>
+		</div>
+	</div>
+	<!-- /MODALS -->
 
 </body>
 </html>

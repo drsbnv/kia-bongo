@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx mix",
     "watch": "npx mix watch",
     "prod": "npx mix --production"
   },
@@ -22,6 +23,7 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "fslightbox": "^3.3.1",
     "swiper": "^8.4.2"
   }

@@ -25,6 +25,12 @@
 
 .swiper-slide-active{
   @apply opacity-100;
+	h3{
+		@apply opacity-100 translate-y-0;
+	}
+	h4{
+		@apply opacity-100 mt-0;
+	}
 }
 
 #video-modal{

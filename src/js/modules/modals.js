@@ -1,9 +1,12 @@
 document.querySelectorAll(".popup-link").forEach(link => link.onclick = e => {
-	e.preventDefault()
-	let id = link.getAttribute('href')
+	e.preventDefault();
+	let id = link.getAttribute('href');
 	if(id === '#' || !id) return;
 	document.getElementById(id.substr(1)).classList.remove('hidden');
-	document.getElementById(id.substr(1)).querySelector('.caption').innerText = link.dataset.caption;
+	const captionEl = document.getElementById(id.substr(1)).querySelector('.caption');
+	if(captionEl){
+		captionEl.innerText = link.dataset.caption;
+	}
 	document.body.classList.add('overflow-hidden');
 })
 

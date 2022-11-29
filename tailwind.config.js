@@ -33,11 +33,6 @@ module.exports = {
 			black: colors.black,
 			gray: colors.gray,
 			white: colors.white,
-			red: '#ED1C24',
-			orange: '#F26621',
-			yellow: '#F2C230',
-			greenLigth: '#7AA342',
-			green: '#269447',
 		},
 		fontSize: {
 			'xs': '.75rem',

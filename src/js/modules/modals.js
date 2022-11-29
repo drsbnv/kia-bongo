@@ -2,11 +2,25 @@ document.querySelectorAll(".popup-link").forEach(link => link.onclick = e => {
 	e.preventDefault();
 	let id = link.getAttribute('href');
 	if(id === '#' || !id) return;
-	document.getElementById(id.substr(1)).classList.remove('hidden');
-	const captionEl = document.getElementById(id.substr(1)).querySelector('.caption');
+	const targetModal = document.getElementById(id.substr(1));
+	if(!targetModal) return;
+	targetModal.classList.remove('hidden');
+	const captionEl = targetModal.querySelector('.caption');
 	if(captionEl){
 		captionEl.innerText = link.dataset.caption;
 	}
+	const excerpt = link.dataset.excerpt;
+	const excerptEl = targetModal.querySelector('#excerpt');
+	if(excerpt){
+		excerptEl.textContent = excerpt;
+	}else{
+		excerptEl.textContent = '';
+	}
+	const imageSrc = link.querySelector('img').src;
+	if(!imageSrc) 
+			return;
+	const targetImg = targetModal.querySelector('#target-img');
+	targetImg.src = imageSrc;
 	document.body.classList.add('overflow-hidden');
 })
 
@@ -18,7 +32,6 @@ document.querySelectorAll('.modal-overlay').forEach(el => {
 	});
 
 	el.addEventListener('click', event => {
-		//console.log(event.target.dataset.close)
 		if(typeof event.target.dataset.close != 'undefined'){
 			closeModal(el);
 		}

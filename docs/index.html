@@ -54,9 +54,9 @@
 		<div class="container">
 			<div class="flex py-5 md:py-0 items-start md:items-center justify-between gap-x-10">
 				<nav class="flex flex-col sm:flex-row sm:justify-between flex-grow flex-wrap gap-5 text-xs lg:text-base">
-					<a href="#specifications" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 font-bold">Характеристики</a>
+					<a href="#specifications" class="uppercase whitespace-nowrap md:py-5 lg:py-10 font-bold">Характеристики</a>
 					<a href="#complectation" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">Комплектация</a>
-					<a href="#common-modal" class="popup-link font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 order-last md:order-none" data-caption="Записаться на тест-драйв">Записаться на тест-драйв</a>
+					<a href="#common-modal" class="popup-link font-normal uppercase whitespace-nowrap md:py-5 lg:py-10 order-last md:order-none" data-caption="Записаться на тест-драйв" data-form="Запись на тест-драйв">Записаться на тест-драйв</a>
 					<a href="#owners" class="font-normal uppercase whitespace-nowrap md:py-5 lg:py-10">Владельцам</a>
 				</nav>
 				<a href="tel:+79608249866" class="absolute top-5 right-4 sm:relative sm:top-0 sm:right-0 bg-white text-xs lg:text-base text-black whitespace-nowrap py-2 px-2.5 rounded-tl-2xl transition-all hover:rounded-br-2xl">+7 (960) 824-98-66</a>
@@ -72,21 +72,22 @@
 				<p class="text-h3 uppercase leading-[1.2] lg:mb-20 pl-4">Маленький помощник<br class="hidden lg:block"> вашего бизнеса</p>
 				<img class="relative lg:absolute lg:right-0 lg:bottom-0 lg:max-w-[660px] xl:max-w-[780px] mb-5 lg:mb-0 px-0 sm:px-4" src="img/banner-bg.png" alt="ALT">
 				<form class="flex flex-col gap-y-7 px-4">
+					<input type="hidden" name="form" value="Форма с баннера">
 					<div class="w-full lg:w-80">
 						<input type="text" name="name" class="w-full" placeholder="Ваше имя">
-						<div class="error-message text-xs text-red hidden name"></div>
+						<div class="error-message text-xs text-accent hidden name"></div>
 					</div>
 					<div class="w-full lg:w-80">
 						<input type="tel" name="phone" class="w-full" placeholder="+7 (999) 999-99-99*">
-						<div class="error-message text-xs text-red hidden phone">Веден некорректный номер телефона</div>
+						<div class="error-message text-xs text-accent hidden phone">Веден некорректный номер телефона</div>
 					</div>
 					<div class="w-full lg:w-80">
 						<input type="email" name="email" class="w-full" placeholder="E-mail">
-						<div class="error-message text-xs text-red hidden email">Веден некорректный email</div>
+						<div class="error-message text-xs text-accent hidden email">Веден некорректный email</div>
 					</div>
 					<div class="w-full lg:w-80">
 						<input type="text" name="inn" class="w-full" placeholder="ИНН организации">
-						<div class="error-message text-xs text-red hidden inn">Веден некорректный ИНН</div>
+						<div class="error-message text-xs text-accent hidden inn">Веден некорректный ИНН</div>
 					</div>
 					<label class="cursor-pointer flex items-center flex-wrap lg:w-80">
 						<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
@@ -94,7 +95,7 @@
 							<span class="fake-checkbox-white mt-0.5 w-4 h-4 border border-dark inline-block flex-shrink-0 transition-all relative"></span>
 							<span>Я согласен на</span> <a href="#policy-modal" class="popup-link policy-popup-link text-white underline transition-all hover:no-underline">обработку персональных данных</a>
 						</div>
-						<div class="error-message text-xs text-red mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+						<div class="error-message text-xs text-accent mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
 					</label>
 					<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
 					<div class="w-full lg:w-80"><input type="submit" class="btn btn-o w-full" value="Отправить"></div>
@@ -295,31 +296,31 @@
 
 				<div class="grid-cols-2 mt-5 mx-auto hidden sm:grid">
 					<div class="text-center text-xs sm:text-base mx-4">
-						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Бортовой&nbsp;грузовик" data-excerpt="Бортовой автомобиль оснащен бортовой платформой, выполненной из поперечных балок, которые сварены с полом кузова. Передний борт у нее сплошной, а боковые и задние – откидные (несъемные)">
+						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Бортовой&nbsp;грузовик" data-excerpt="Бортовой автомобиль оснащен бортовой платформой, выполненной из поперечных балок, которые сварены с полом кузова. Передний борт у нее сплошной, а боковые и задние – откидные (несъемные)" data-form="Узнать подробнее про Бортовой грузовик">
 							<img src="img/sliders/models/bongo-bort.png" alt="Бортовой грузовик" class="max-w-full mx-auto my-8">
 							<h5 class="text-2xl">Бортовой грузовик</h5>
 						</a>
 					</div>
 					<div class="text-center text-xs sm:text-base mx-4">
-						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Tентовый&nbsp;грузовик" data-excerpt="Кроме кабин производитель предлагает потребителям также и разные варианты кузова. Так, КИА Бонго может быть укомплектован тентованной бортовой платформой">
+						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Tентовый&nbsp;грузовик" data-excerpt="Кроме кабин производитель предлагает потребителям также и разные варианты кузова. Так, КИА Бонго может быть укомплектован тентованной бортовой платформой" data-form="Узнать подробнее про Tентовый грузовик">
 							<img src="img/sliders/models/bongo-tent.png" alt="Tентовый грузовик" class="max-w-full mx-auto my-8">
 							<h5 class="text-2xl">Tентовый грузовик</h5>
 						</a>
 					</div>
 					<div class="text-center text-xs sm:text-base mx-4">
-						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Изотермический&nbsp;фургон" data-excerpt="Изотермический фургон из сэндвич панелей (утеплитель ППС экструдированный 50мм (теплопроводность 0,035 вт/м3), обшивка фургона – оцинкованная сталь с полимерным покрытием, наружное обрамление фургона – анодированный алюминиевый уголок">
+						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Изотермический&nbsp;фургон" data-excerpt="Изотермический фургон из сэндвич панелей (утеплитель ППС экструдированный 50мм (теплопроводность 0,035 вт/м3), обшивка фургона – оцинкованная сталь с полимерным покрытием, наружное обрамление фургона – анодированный алюминиевый уголок" data-form="Узнать подробнее про Изотермический&nbsp;фургон">
 							<img src="img/sliders/models/bongo-izo.png" alt="Изотермический фургон" class="max-w-full mx-auto my-8">
 							<h5 class="text-2xl">Изотермический фургон</h5>
 						</a>
 					</div>
 					<div class="text-center text-xs sm:text-base mx-4">
-						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Рефрижераторный&nbsp;фургон" data-excerpt="Рефрижераторный фургон из сэндвич панелей высокой изотермичности (утеплитель ППС экструдированный 80мм (теплопроводность 0,045 вт/м3), обшивка фургона – оцинкованная сталь с полимерным покрытием, наружное обрамление фургона – анодированный алюминиевый уголок. Рекомендуемый температурный режим перевозки продукции +12С…-18С.">
+						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Рефрижераторный&nbsp;фургон" data-excerpt="Рефрижераторный фургон из сэндвич панелей высокой изотермичности (утеплитель ППС экструдированный 80мм (теплопроводность 0,045 вт/м3), обшивка фургона – оцинкованная сталь с полимерным покрытием, наружное обрамление фургона – анодированный алюминиевый уголок. Рекомендуемый температурный режим перевозки продукции +12С…-18С." data-form="Узнать подробнее про Рефрижераторный&nbsp;фургон">
 							<img src="img/sliders/models/bongo-ref.png" alt="Рефрижераторный фургон" class="max-w-full mx-auto my-8">
 							<h5 class="text-2xl">Рефрижераторный фургон</h5>
 						</a>
 					</div>
 					<div class="text-center text-xs sm:text-base mx-4">
-						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Бортовой грузовик с&nbsp;пирамидой" data-excerpt="Kia Bongo с пирамидой для перевозки окон незаменима для безопасной транспортировки. Пирамида – это неподвижная конструкция, на которой окна закрепляются под наклоном, поэтому перевозка на такой машине осуществляется аккуратно">
+						<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Бортовой грузовик с&nbsp;пирамидой" data-excerpt="Kia Bongo с пирамидой для перевозки окон незаменима для безопасной транспортировки. Пирамида – это неподвижная конструкция, на которой окна закрепляются под наклоном, поэтому перевозка на такой машине осуществляется аккуратно" data-form="Узнать подробнее про Бортовой грузовик с&nbsp;пирамидой">
 							<img src="img/sliders/models/bongo-piramida.png" alt="Бортовой грузовик с пирамидой" class="max-w-full mx-auto my-8">
 							<h5 class="text-2xl">Бортовой грузовик с&nbsp;пирамидой</h5>
 						</a>
@@ -330,7 +331,7 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="text-center text-xs sm:text-base mx-4">
-								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Бортовой&nbsp;грузовик" data-excerpt="Бортовой автомобиль оснащен бортовой платформой, выполненной из поперечных балок, которые сварены с полом кузова. Передний борт у нее сплошной, а боковые и задние – откидные (несъемные)">
+								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Бортовой&nbsp;грузовик" data-excerpt="Бортовой автомобиль оснащен бортовой платформой, выполненной из поперечных балок, которые сварены с полом кузова. Передний борт у нее сплошной, а боковые и задние – откидные (несъемные)" data-form="Узнать подробнее про Бортовой грузовик">
 									<img src="img/sliders/models/bongo-bort.png" alt="Бортовой грузовик" class="max-w-full mx-auto my-8">
 									<h5 class="text-lg leading-tight min-h-[45px] px-4">Бортовой грузовик</h5>
 								</a>
@@ -338,7 +339,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="text-center text-xs sm:text-base mx-4">
-								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Tентовый&nbsp;грузовик" data-excerpt="Кроме кабин производитель предлагает потребителям также и разные варианты кузова. Так, КИА Бонго может быть укомплектован тентованной бортовой платформой">
+								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Tентовый&nbsp;грузовик" data-excerpt="Кроме кабин производитель предлагает потребителям также и разные варианты кузова. Так, КИА Бонго может быть укомплектован тентованной бортовой платформой" data-form="Узнать подробнее про Tентовый грузовик">
 									<img src="img/sliders/models/bongo-tent.png" alt="Tентовый грузовик" class="max-w-full mx-auto my-8">
 									<h5 class="text-lg leading-tight min-h-[45px] px-4">Tентовый грузовик</h5>
 								</a>
@@ -346,7 +347,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="text-center text-xs sm:text-base mx-4">
-								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Изотермический&nbsp;фургон" data-excerpt="Изотермический фургон из сэндвич панелей (утеплитель ППС экструдированный 50мм (теплопроводность 0,035 вт/м3), обшивка фургона – оцинкованная сталь с полимерным покрытием, наружное обрамление фургона – анодированный алюминиевый уголок">
+								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Изотермический&nbsp;фургон" data-excerpt="Изотермический фургон из сэндвич панелей (утеплитель ППС экструдированный 50мм (теплопроводность 0,035 вт/м3), обшивка фургона – оцинкованная сталь с полимерным покрытием, наружное обрамление фургона – анодированный алюминиевый уголок" data-form="Узнать подробнее про Изотермический&nbsp;фургон">
 									<img src="img/sliders/models/bongo-izo.png" alt="Изотермический фургон" class="max-w-full mx-auto my-8">
 									<h5 class="text-lg leading-tight min-h-[45px] px-4">Изотермический фургон</h5>
 								</a>
@@ -354,7 +355,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="text-center text-xs sm:text-base mx-4">
-								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Рефрижераторный&nbsp;фургон" data-excerpt="Рефрижераторный фургон из сэндвич панелей высокой изотермичности (утеплитель ППС экструдированный 80мм (теплопроводность 0,045 вт/м3), обшивка фургона – оцинкованная сталь с полимерным покрытием, наружное обрамление фургона – анодированный алюминиевый уголок. Рекомендуемый температурный режим перевозки продукции +12С…-18С.">
+								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Рефрижераторный&nbsp;фургон" data-excerpt="Рефрижераторный фургон из сэндвич панелей высокой изотермичности (утеплитель ППС экструдированный 80мм (теплопроводность 0,045 вт/м3), обшивка фургона – оцинкованная сталь с полимерным покрытием, наружное обрамление фургона – анодированный алюминиевый уголок. Рекомендуемый температурный режим перевозки продукции +12С…-18С." data-form="Узнать подробнее про Рефрижераторный&nbsp;фургон">
 									<img src="img/sliders/models/bongo-ref.png" alt="Рефрижераторный фургон" class="max-w-full mx-auto my-8">
 									<h5 class="text-lg leading-tight min-h-[45px] px-4">Рефрижераторный фургон</h5>
 								</a>
@@ -362,7 +363,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="text-center text-xs sm:text-base mx-4">
-								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Бортовой грузовик с&nbsp;пирамидой" data-excerpt="Kia Bongo с пирамидой для перевозки окон незаменима для безопасной транспортировки. Пирамида – это неподвижная конструкция, на которой окна закрепляются под наклоном, поэтому перевозка на такой машине осуществляется аккуратно">
+								<a href="#common-modal-with-img" class="popup-link" data-caption="Узнать подробнее про Бортовой грузовик с&nbsp;пирамидой" data-excerpt="Kia Bongo с пирамидой для перевозки окон незаменима для безопасной транспортировки. Пирамида – это неподвижная конструкция, на которой окна закрепляются под наклоном, поэтому перевозка на такой машине осуществляется аккуратно" data-form="Узнать подробнее про Бортовой грузовик с&nbsp;пирамидой">
 									<img src="img/sliders/models/bongo-piramida.png" alt="Бортовой грузовик с пирамидой" class="max-w-full mx-auto my-8">
 									<h5 class="text-lg leading-tight min-h-[45px] px-4">Бортовой грузовик с&nbsp;пирамидой</h5>
 								</a>
@@ -450,22 +451,23 @@
 					<img src="img/key-bg.png" class="w-100 h-auto absolute m-auto top-0 left-0 bottom-0 right-0 lg:m-0 lg:h-auto lg:w-[55%] lg:translate-x-0 lg:-left-5 lg:-top-5 z-[-1] opacity-20 lg:opacity-100" />
 					<div class="w-full lg:w-1/2">
 						<form class="flex flex-col items-center gap-y-7 py-12 px-6 md:px-20 mx-auto">
+							<input type="hidden" name="form" value="Получить прайс-лист">
 							<h3 class="text-center uppercase text-2xl lg:text-lg">Получите прайс-лист на&nbsp;e&#8209;mail</h3>
 							<div class="w-full">
 								<input type="text" name="name" class="w-full" placeholder="Ваше имя">
-								<div class="error-message text-xs text-red hidden name"></div>
+								<div class="error-message text-xs text-accent hidden name"></div>
 							</div>
 							<div class="w-full">
 								<input type="tel" name="phone" class="w-full" placeholder="+7 (999) 999-99-99*">
-								<div class="error-message text-xs text-red hidden phone">Веден некорректный номер телефона</div>
+								<div class="error-message text-xs text-accent hidden phone">Веден некорректный номер телефона</div>
 							</div>
 							<div class="w-full">
 								<input type="email" name="email" class="w-full" placeholder="E-mail">
-								<div class="error-message text-xs text-red hidden email">Веден некорректный email</div>
+								<div class="error-message text-xs text-accent hidden email">Веден некорректный email</div>
 							</div>
 							<div class="w-full">
 								<input type="text" name="inn" class="w-full" placeholder="ИНН организации">
-								<div class="error-message text-xs text-red hidden inn">Веден некорректный ИНН</div>
+								<div class="error-message text-xs text-accent hidden inn">Веден некорректный ИНН</div>
 							</div>
 							<label class="cursor-pointer flex items-center flex-wrap w-full">
 								<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
@@ -473,7 +475,7 @@
 									<span class="fake-checkbox-black mt-0.5 w-4 h-4 border border-dark inline-block flex-shrink-0 transition-all relative"></span>
 									<span>Я согласен на</span> <a href="#policy-modal" class="popup-link policy-popup-link text-black underline transition-all hover:no-underline">обработку персональных данных</a>
 								</div>
-								<div class="error-message text-xs text-red mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+								<div class="error-message text-xs text-accent mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
 							</label>
 							<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
 							<div class="w-full"><input type="submit" class="btn bg-black text-white py-3.5 text-xs sm:text-base w-full" value="Получить прайс-лист"></div>
@@ -527,7 +529,7 @@
 							<i>Внимание! Акция на&nbsp;расширенную гарантию ограничена.</i></p>
 					</div>
 					<div class="accordion-item relative">
-						<a href="#common-modal" class="popup-link text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4" data-caption="Онлайн-запись на сервис">Онлайн-запись на сервис</a>
+						<a href="#common-modal" class="popup-link text-xl sm:text-4xl font-light pr-4 py-1 inline-block rounded-tl-2xl cursor-pointer transition-all hover:translate-x-4" data-caption="Онлайн-запись на сервис" data-form="Онлайн-запись на сервис">Онлайн-запись на сервис</a>
 						<p class="mt-2 mb-3 font-light text-base sm:text-xl transition-all opacity-0 invisible h-0 -traslate-y-3"></p>
 					</div>
 					<div class="accordion-item realative">
@@ -605,21 +607,22 @@
 			</div>
 			<p class="caption text-center text-3xl mb-10">Обратная связь</p>
 			<form class="flex flex-col gap-4 sm:gap-5" id="rating-form">
+				<input type="hidden" name="form" value="">
 				<div class="w-full">
 					<input type="text" name="name" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="Ваше имя">
-					<div class="error-message text-xs text-red hidden name"></div>
+					<div class="error-message text-xs text-accent hidden name"></div>
 				</div>
 				<div class="w-full">
 					<input type="tel" name="phone" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="+7 (999) 999-99-99*">
-					<div class="error-message text-xs text-red hidden phone">Веден некорректный номер телефона</div>
+					<div class="error-message text-xs text-accent hidden phone">Веден некорректный номер телефона</div>
 				</div>
 				<div class="w-full">
 					<input type="email" name="email" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="E-mail">
-					<div class="error-message text-xs text-red hidden email">Веден некорректный email</div>
+					<div class="error-message text-xs text-accent hidden email">Веден некорректный email</div>
 				</div>
 				<div class="w-full">
 					<input type="text" name="inn" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="ИНН организации">
-					<div class="error-message text-xs text-red hidden inn">Веден некорректный ИНН</div>
+					<div class="error-message text-xs text-accent hidden inn">Веден некорректный ИНН</div>
 				</div>
 				<label class="cursor-pointer flex items-center flex-wrap">
 					<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
@@ -627,7 +630,7 @@
 						<span class="fake-checkbox-black mt-0.5 w-4 h-4 border border-dark inline-block flex-shrink-0 transition-all relative"></span>
 						<span>Я согласен на</span> <a href="#policy-modal" class="popup-link policy-popup-link text-black underline transition-all hover:no-underline">обработку персональных данных</a>
 					</div>
-					<div class="error-message text-xs text-red mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+					<div class="error-message text-xs text-accent mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
 				</label>
 				<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
 				<input type="submit" class="btn bg-black text-white py-3.5 text-xs sm:text-base w-full" value="Отправить">
@@ -648,21 +651,22 @@
 					<p class="text-base mb-4 lg:mb-0" id="excerpt"></p>
 				</div>
 				<form class="flex flex-col gap-4 sm:gap-5" id="rating-form">
+					<input type="hidden" name="form" value="">
 					<div class="w-full">
 						<input type="text" name="name" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="Ваше имя">
-						<div class="error-message text-xs text-red hidden name"></div>
+						<div class="error-message text-xs text-accent hidden name"></div>
 					</div>
 					<div class="w-full">
 						<input type="tel" name="phone" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="+7 (999) 999-99-99*">
-						<div class="error-message text-xs text-red hidden phone">Веден некорректный номер телефона</div>
+						<div class="error-message text-xs text-accent hidden phone">Веден некорректный номер телефона</div>
 					</div>
 					<div class="w-full">
 						<input type="email" name="email" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="E-mail">
-						<div class="error-message text-xs text-red hidden email">Веден некорректный email</div>
+						<div class="error-message text-xs text-accent hidden email">Веден некорректный email</div>
 					</div>
 					<div class="w-full">
 						<input type="text" name="inn" class="border-2 border-dark border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2 mb-1.5 sm:text-lg outline-none w-full" placeholder="ИНН организации">
-						<div class="error-message text-xs text-red hidden inn">Веден некорректный ИНН</div>
+						<div class="error-message text-xs text-accent hidden inn">Веден некорректный ИНН</div>
 					</div>
 					<label class="cursor-pointer flex items-center flex-wrap">
 						<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
@@ -670,7 +674,7 @@
 							<span class="fake-checkbox-black mt-0.5 w-4 h-4 border border-dark inline-block flex-shrink-0 transition-all relative"></span>
 							<span>Я согласен на</span> <a href="#policy-modal" class="popup-link policy-popup-link text-black underline transition-all hover:no-underline">обработку персональных данных</a>
 						</div>
-						<div class="error-message text-xs text-red mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+						<div class="error-message text-xs text-accent mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
 					</label>
 					<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
 					<input type="submit" class="btn bg-black text-white py-3.5 text-xs sm:text-base w-full" value="Отправить">

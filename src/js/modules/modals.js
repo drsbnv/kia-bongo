@@ -9,18 +9,22 @@ document.querySelectorAll(".popup-link").forEach(link => link.onclick = e => {
 	if(captionEl){
 		captionEl.innerText = link.dataset.caption;
 	}
+	const formName = link.dataset.form;
+	const formInput = targetModal.querySelector('input[name="form"]');
+	if(formName && formInput){
+		formInput.value = formName;
+	}
 	const excerpt = link.dataset.excerpt;
 	const excerptEl = targetModal.querySelector('#excerpt');
-	if(excerpt){
+	if(excerpt && excerptEl){
 		excerptEl.textContent = excerpt;
-	}else{
-		excerptEl.textContent = '';
 	}
-	const imageSrc = link.querySelector('img').src;
-	if(!imageSrc) 
-			return;
-	const targetImg = targetModal.querySelector('#target-img');
-	targetImg.src = imageSrc;
+	const image = link.querySelector('img');
+	if(image){
+		imageSrc = image.src;
+		const targetImg = targetModal.querySelector('#target-img');
+		targetImg.src = imageSrc;
+	}
 	document.body.classList.add('overflow-hidden');
 })
 
